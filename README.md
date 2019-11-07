@@ -12,8 +12,15 @@
 - Run your image off of dockerhub `docker run -p 3000:3000 <username>/hello-docker:v1`
 - Try running someone else's image
 
+## Pushing to docker
+- `docker tag <project-name> <username>/<project-name>`
+- `docker push <username>/<project-name>`
+- note: you may have to run with 'sudo'
+- sudo docker pull <containerID>
+
 ## Inspecting docker containers
 - Get into your contaienr with `docker exec -it <id> sh`
+- wget localhost:3002
 - You can now navigate and run commands from inside the container
 - To get out, `exit`
 - To view running logs `docker logs <id>`
